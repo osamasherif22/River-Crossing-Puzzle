@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 
 public class Carrot extends Planet implements ICrosser {
 
-	public Carrot() {
-		super(5);
+	public Carrot(int wight ) {
+		super(wight);
 		// TODO Auto-generated constructor stub
 	}
 

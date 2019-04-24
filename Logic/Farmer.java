@@ -6,8 +6,8 @@ public class Farmer  extends Person implements ICrosser {
 
 
 	
-	public Farmer() {
-		super(90);
+	public Farmer(int wight) {
+		super(wight);
 		// TODO Auto-generated constructor stub
 	}
 

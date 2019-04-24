@@ -7,8 +7,8 @@ public class Fox extends CarnivorousAnimal implements ICrosser {
 
 	
 
-	public Fox() {
-		super(20,2);
+	public Fox(int wight ) {
+		super(wight,2);
 		// TODO Auto-generated constructor stub
 	}
 

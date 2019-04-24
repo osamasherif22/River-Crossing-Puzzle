@@ -8,7 +8,7 @@ public class Sheep extends herbivorousAnimal implements ICrosser {
 	
 
 	public Sheep(int weight) {
-		super(15,1);
+		super(weight,1);
 		// TODO Auto-generated constructor stub
 	}
 

@@ -1,17 +1,14 @@
 package Logic;
-
 import java.util.List;
 public class Boat 
 {
       private String position ; ///"R" for right bank and "L" for lift bank 
       private int crossersNum ; 
       final int capacity =2;
-   	private List<ICrosser> crossersList ;
+      private int wight ;
+  	private List<ICrosser> boatCrossers ;
 
- 
-
-
-	private static Boat instance1 = null;
+  	private static Boat instance1 = null;
  	 public synchronized static Boat getInstance() 
  	 {
 		 
@@ -25,17 +22,26 @@ public class Boat
       private Boat() {}
  
  	 public List<ICrosser> getCrossersList() {
- 		return crossersList;
+ 		return boatCrossers;
  	}
 
-
- 	public void addCrosserToList(ICrosser crossers) {
- 		this.crossersList.add(crossers);
+ 	public int getWight() {
+		return wight;
+	}
+ 	public void addCrosserToList(ICrosser crosser) 
+ 	{
+ 		this.boatCrossers.add(crosser);
+		this.wight +=crosser.getWeight();
+ 	}
+ 	public void removeCrosserToList(ICrosser crosser) 
+ 	{
+		this.wight-=crosser.getWeight();
+ 		this.boatCrossers.remove(crosser);
  	}
  	public int getCrossersNum() 
-	 {
+	{
 		return crossersNum;
-	 }
+	}
 
 	public void setCrossersNum(int crossersNum) 
 	{
@@ -55,7 +61,7 @@ public class Boat
 
 	public void setPosition(String position)
 	{
-		this.position = position;
+		this.position = position;//show edit in git 
 	}
 
 	

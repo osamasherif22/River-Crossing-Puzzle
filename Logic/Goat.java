@@ -7,8 +7,8 @@ public class Goat extends herbivorousAnimal implements ICrosser {
 
 	
 
-	public Goat() {
-		super(15,1);
+	public Goat(int wight) {
+		super(wight,1);
 		// TODO Auto-generated constructor stub
 	}
 

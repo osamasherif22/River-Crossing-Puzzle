@@ -16,7 +16,7 @@ String s[] = {"1. The farmer is the only one who can sail the boat. He can only 
 	"2. You can not leave any two crossers on the same bank if they can harm each other"};
 		return s;
 	}
-	public boolean haveFarmer(List<ICrosser>list)
+	public boolean hasFarmer(List<ICrosser>list)
 	{
 		for (int i =0 ; i<list.size();i++)
 		{
@@ -30,7 +30,7 @@ String s[] = {"1. The farmer is the only one who can sail the boat. He can only 
 	{
 		if (bankList.isEmpty()) return true;
 		if (bankList.size()==1) return true;
-		if (haveFarmer(bankList)) return true ; //Farmer prevent any fight
+		if (hasFarmer(bankList)) return true ; //Farmer prevent any fight
 		for (int i =0 ; i<bankList.size();i++)
 		{
 			for (int j =0 ; j<bankList.size();j++)
@@ -44,7 +44,7 @@ String s[] = {"1. The farmer is the only one who can sail the boat. He can only 
 	@Override
 	public boolean isValid(List<ICrosser> rightBankCrossers, List<ICrosser> leftBankCrossers,List<ICrosser> boatRiders) 
 	{
-	if (haveFarmer(boatRiders))
+	if (hasFarmer(boatRiders))
 		{
 			if (bankIsSafe(rightBankCrossers))
 			{

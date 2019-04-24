@@ -5,8 +5,8 @@ import java.awt.image.BufferedImage;
 public class Cabbage extends Planet implements ICrosser {
 
 	
-	public Cabbage() {
-		super(5);
+	public Cabbage(int wight) {
+		super(wight);
 		// TODO Auto-generated constructor stub
 	}
 
