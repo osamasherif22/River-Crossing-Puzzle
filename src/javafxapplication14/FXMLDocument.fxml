@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication14.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="442.0" fitWidth="657.0">
+         <image>
+            <Image url="@../icons/background.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="grid" layoutX="10.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="637.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="5.0" prefWidth="5.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.20001220703125" minWidth="10.0" prefWidth="161.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.99998779296874" minWidth="10.0" prefWidth="67.800048828125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.59995117187498" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.2000244140625" minWidth="10.0" prefWidth="77.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.5999877929687" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.19998779296873" minWidth="10.0" prefWidth="94.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="boat1" fitHeight="108.0" fitWidth="138.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="13">
+               <image>
+                  <Image url="@../icons/Boat.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="crosser1" fitHeight="103.0" fitWidth="96.0" onMousePressed="#MovingCrosser1ToRight" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <ImageView fx:id="crosser2" fitHeight="57.0" fitWidth="90.0" onMousePressed="#MovingCrosser2ToRight" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <ImageView fx:id="crosser3" fitHeight="64.0" fitWidth="93.0" onMousePressed="#MovingCrosser3ToRight" onTouchPressed="#MovingCrosser3ToRight" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <ImageView fx:id="crosser4" fitHeight="63.0" fitWidth="58.0" onMousePressed="#MovingCrosser4ToRight" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+            <ImageView fx:id="crosser5" fitHeight="63.0" fitWidth="58.0" onMousePressed="#MovingCrosser5ToRight" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+            <ImageView fx:id="boat1" fitHeight="108.0" fitWidth="137.0" layoutX="387.0" layoutY="169.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="13">
+               <image>
+                  <Image url="@../icons/Boat.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="OnBoat11" fitHeight="229.0" fitWidth="74.0" onMousePressed="#Onboat11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+            <ImageView fx:id="OnBoat12" fitHeight="233.0" fitWidth="62.0" layoutX="155.0" layoutY="190.0" onMousePressed="#Onboat12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+            <ImageView fx:id="boat2" fitHeight="108.0" fitWidth="137.0" layoutX="183.0" layoutY="169.0" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="13">
+               <image>
+                  <Image url="@../icons/Boat.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="OnBoat21" fitHeight="230.0" fitWidth="68.0" layoutX="156.0" layoutY="120.0" onMousePressed="#Onboat21" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+            <ImageView fx:id="OnBoat22" fitHeight="231.0" fitWidth="58.0" layoutX="223.0" layoutY="118.0" onMousePressed="#Onboat22" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+            <ImageView fx:id="scor" fitHeight="72.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../icons/Untitled-2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="scoreLabel" alignment="CENTER" prefHeight="17.0" prefWidth="67.0" text="Label" textAlignment="RIGHT" textFill="#dd2e2e" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="GOimage" fitHeight="51.0" fitWidth="51.0" onMouseClicked="#GoPress" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="22">
+               <image>
+                  <Image url="@../icons/Forwardbutton.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="crosser1ViewRight" fitHeight="64.0" fitWidth="92.0" onMousePressed="#MovingCrosser1ToLeft" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+            <ImageView fx:id="crosser2ViewRight" fitHeight="81.0" fitWidth="106.0" onMousePressed="#MovingCrosser2ToLeft" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+            <ImageView fx:id="crosser3ViewRight" fitHeight="56.0" fitWidth="102.0" onMousePressed="#MovingCrosser3ToLeft" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+            <ImageView fx:id="crosser4ViewRight" fitHeight="57.0" fitWidth="104.0" onMousePressed="#MovingCrosser4ToLeft" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+            <ImageView fx:id="crosser5ViewRight" fitHeight="57.0" fitWidth="104.0" onMousePressed="#MovingCrosser5ToLeft" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="22" />
+            <ImageView fx:id="backImg" fitHeight="55.0" fitWidth="65.0" onMouseClicked="#BackPr" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="22">
+               <image>
+                  <Image url="@../icons/Backbutton.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="Stbtn" alignment="CENTER" blendMode="HARD_LIGHT" cancelButton="true" defaultButton="true" layoutX="335.0" layoutY="171.0" mnemonicParsing="false" onAction="#Start" opacity="0.82" prefHeight="116.0" prefWidth="281.0" text="Start New Game" textAlignment="CENTER" textFill="#0d7c11" wrapText="true">
+         <font>
+            <Font name="Courier New Bold Italic" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" alignment="BOTTOM_CENTER" blendMode="HARD_LIGHT" cancelButton="true" defaultButton="true" layoutX="285.0" layoutY="376.0" mnemonicParsing="false" onAction="#Save" opacity="0.82" prefHeight="55.0" prefWidth="93.0" text="Save" textFill="#114d0f" visible="false" wrapText="true">
+         <font>
+            <Font name="Tillana" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="laodButton" alignment="CENTER" blendMode="HARD_LIGHT" cancelButton="true" defaultButton="true" layoutX="80.0" layoutY="172.0" mnemonicParsing="false" onAction="#Load" opacity="0.82" prefHeight="116.0" prefWidth="239.0" text="Load " textFill="#0d7c11" wrapText="true">
+         <font>
+            <Font name="Courier New Bold Italic" size="36.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
