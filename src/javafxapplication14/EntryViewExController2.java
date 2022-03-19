@@ -16,11 +16,11 @@ public class EntryViewExController2 {
     @FXML
     private ImageView StartButton;
     @FXML
-    private ImageView LoadButton;
+    private ImageView LoadButton; 
 
     @FXML
     void GotoStorySelectView(ActionEvent event) throws IOException {
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("StoryChooseView.fxml"));
+    	Parent tableViewParent = FXMLLoader.load(getClass().getResource("StoryChooseView.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
         //This line gets the Stage information
@@ -29,6 +29,9 @@ public class EntryViewExController2 {
         window.setScene(tableViewScene);
         window.show();
     }
-
+   
+    
+    
+    
   
 }

@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import Logic.*;
 public class StoryChooseController {
 
-		@FXML
+	 @FXML
 	    private ImageView story1;
 
 	    @FXML

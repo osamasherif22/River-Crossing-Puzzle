@@ -3,6 +3,7 @@ package Logic;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+import com.sun.xml.internal.bind.v2.runtime.Name;
 
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.Image;
