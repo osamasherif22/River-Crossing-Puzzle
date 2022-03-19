@@ -37,8 +37,8 @@ eating ranks can eat crossers with lower eating ranks.
 
 ## Authors
 - **[Moahmmed Aiman](https://github.com/MohammedAimanHESSin)**
-- **[Osama Sherif](https://github.com/kevinwairi)**
+- **[Osama Sherif](https://github.com/osamasherif22)**
 - **[Abdulrahman Habib](https://github.com/habiib1999)**
 
 ---
-_This README made with ❤️ by [Osama Sherif](https://github.com/kevinwairi)_
+_This README made with ❤️ by [Osama Sherif](https://github.com/osamasherif22)_
